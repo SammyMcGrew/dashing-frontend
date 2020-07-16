@@ -7,31 +7,48 @@ import {Table, Container, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 
 
 // import QRcodes from '../../components/QRCodes';
-// import Lesson from '../../components/lesson';
-// import Videos from '../../components/Videos';
+import Lesson from '../../components/lesson';
+import Videos from '../../components/Videos';
 
 const Dashboard = props => {
     return (
         <div className='dash'>
-        <h1>
-            Welcome to your dashboard!
-            <ul>
-                <li>
-                    <Link to='/videogrid'>
-                        Applicants Video Resumes
-                    </Link>
-                </li>
-            </ul>
-      
-            <VideoGrid id='vidgrid' />
+            <h1>
+                Welcome to your dashboard!
+            </h1>
+            <Container >
+                <Row>
+                    <Col className='resumelink'>
+                        <Link to='/videogrid'>
+                            Applicants Video Resumes
+                        </Link>
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row >
+                    <Col lg = {true}>
+                        <Lesson />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        {<Videos />}
+                    </Col>
+                </Row>
+            </Container>
+              
             
             
-            {/* <QRcodes /> */}
-            {/* <Lesson />     */}
-            {/* <Videos />        */}
-        </h1>
+               
                 
-    </div>
+                
+                {/* <QRcodes /> */}
+                
+                
+        </div>
+                
+       
     );
     
 };

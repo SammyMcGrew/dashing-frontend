@@ -101,6 +101,13 @@ const App = props => {
             </MainLayout>
           </WithAdminAuth>
         )} />
+         <Route path='/videogrid' render={() => (
+          /* <WithAdminAuth> */
+            <MainLayout>
+              <VideoGrid />
+            </MainLayout>
+          /* </WithAdminAuth> */
+        )} />
       </Switch>
     </div>
   );

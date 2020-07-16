@@ -15,13 +15,31 @@ class VideoGrid extends Component {
 
     render() {
         return (
-            // <ResponsivePlayer />
-            <p>
-               This is my video grid.
-            </p>          
+            <Container>
+                <Row>
+                    <Col md>
+                        <p ID = 'VIDEO'>
+                          Test!  <ResponsivePlayer />
+                        </p>
+                       
+                    </Col>
+                    
+                    <Col md>
+                        <p>
+                            Test 2!
+                        </p>
+                    </Col>
+                </Row>
+
+            </Container>
+           
+                   
             
         )
+        
     }
+
+        
 }
 
 export default VideoGrid;

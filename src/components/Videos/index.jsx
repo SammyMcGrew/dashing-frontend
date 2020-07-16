@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import './styles.scss';
-import {table, Container} from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 
 const ResponsivePlayer = ({ url, onProgress }) => {
@@ -13,8 +11,8 @@ const ResponsivePlayer = ({ url, onProgress }) => {
             <ReactPlayer 
             className='react-player'
             url={url}
-            width='100%'
-            height='100%'
+            width='50%'
+            height='50%'
             controls={true}
             onProgress={onProgress}
             />
