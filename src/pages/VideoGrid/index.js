@@ -15,23 +15,62 @@ class VideoGrid extends Component {
 
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col md>
-                        <p ID = 'VIDEO'>
-                          Test!  <ResponsivePlayer />
-                        </p>
+            <div> 
+            <Container className = 'gridTest'>
+                
+                    <Col>
+                        <Row>
+                            Video goes here.
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Row>
+                            Video goes here.
+                        </Row>
+                    </Col>
+                     <Col>
+                        <Row>
+                            Video goes here.
+                        </Row>
                        
                     </Col>
-                    
-                    <Col md>
-                        <p>
-                            Test 2!
-                        </p>
+                    <Col>
+                        <Row>
+                            Video goes here.
+                        </Row>
                     </Col>
-                </Row>
 
             </Container>
+            <Container className= 'gridTest'>
+                <Col>
+                    <Row>
+                        Video goes here.
+                    </Row>
+                </Col>
+                <Col>
+                    <Row>
+                        Video goes here.
+                    </Row>
+                </Col>
+                <Col>
+                    <Row>
+                        Video goes here.
+                    </Row>
+                </Col>
+                <Col>
+                    <Row>
+                        Video goes here.
+                    </Row>
+                </Col>
+
+            </Container>
+            </div>
+            
+                
+            
+                  
+
+            
            
                    
             
