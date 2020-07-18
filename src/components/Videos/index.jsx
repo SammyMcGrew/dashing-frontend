@@ -2,6 +2,8 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './styles.scss';
 
+
+
 const ResponsivePlayer = ({ url, onProgress }) => {
 
     return (
@@ -9,13 +11,16 @@ const ResponsivePlayer = ({ url, onProgress }) => {
             <ReactPlayer 
             className='react-player'
             url={url}
-            width='100%'
-            height='100%'
+            width='50%'
+            height='50%'
             controls={true}
             onProgress={onProgress}
             />
         </div>
+      
     )
+
 }
+
 
 export default ResponsivePlayer;

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import { checkUserSession } from './redux/User/user.actions';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // components 
 import AdminToolbar from './components/AdminToolbar';
@@ -27,6 +28,7 @@ import Login from './pages/Login';
 import Recovery from './pages/Recovery';
 import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
+import VideoGrid from './pages/VideoGrid';
 import './default.scss';
 // import Paypal from './components/PayPal';
 
@@ -103,6 +105,13 @@ const App = props => {
               <Admin />
             </MainLayout>
           </WithAdminAuth>
+        )} />
+         <Route path='/videogrid' render={() => (
+          /* <WithAdminAuth> */
+            <MainLayout>
+              <VideoGrid />
+            </MainLayout>
+          /* </WithAdminAuth> */
         )} />
       </Switch>
     </div>

@@ -15,7 +15,8 @@ const Lesson = () => {
     return (
     <div>
         <ResponsivePlayer 
-        url='https://www.youtube.com/channel/UCoLn2MBLXmxZQNBBURSOg5Q/featured'
+        id = 'lesson'
+        url='https://www.youtube.com/watch?v=C9OPFh4LHHw'
         onProgress={handleWatchComplete}
         />
         <div className={watchComplete ? 'marker marker--is-complete' 
